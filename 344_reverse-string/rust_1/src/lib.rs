@@ -7,7 +7,6 @@
 // @lc code=start
 impl Solution {
     pub fn reverse_string(s: &mut Vec<char>) {
-        
     }
 }
 // @lc code=end

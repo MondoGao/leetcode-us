@@ -1,0 +1,11 @@
+[package]
+name = "leetcode-us"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace]
+members = [
+  "344_reverse-string/rust_1"
+]
