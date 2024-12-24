@@ -380,3 +380,8 @@ Cargo.lock
 *.pdb
 
 # End of https://www.toptal.com/developers/gitignore/api/rust,go,node,python,macos
+
+
+# Added by cargo
+
+/target
