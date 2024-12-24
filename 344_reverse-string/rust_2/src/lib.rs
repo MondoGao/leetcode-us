@@ -3,7 +3,6 @@
  *
  * [344] Reverse String
  */
-
 // @lc code=start
 impl Solution {
     pub fn reverse_string(s: &mut Vec<char>) {
@@ -11,9 +10,7 @@ impl Solution {
         let mut tail: usize = s.len() - 1;
 
         while head < tail {
-            let temp = s[head];
-            s[head] = s[tail];
-            s[tail] = temp;
+            s.swap(head, tail);
             head += 1;
             tail -= 1;
         }

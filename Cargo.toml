@@ -7,5 +7,6 @@ edition = "2021"
 
 [workspace]
 members = [
-  "344_reverse-string/rust_1"
+  "344_reverse-string/rust_1",
+  "344_reverse-string/rust_2"
 ]
