@@ -5,11 +5,14 @@
  */
 package main
 
-import (
-	"math"
-)
-
 // @lc code=start
+func abs(num int) int {
+	if num > 0 {
+		return num
+	}
+
+	return -num
+}
 func sortedSquares(nums []int) []int {
 	var (
 		in_len     = len(nums)
@@ -20,15 +23,15 @@ func sortedSquares(nums []int) []int {
 
 	for head <= tail {
 		cur--
-		head_v := float64(nums[head])
-		tail_v := float64(nums[tail])
-		if math.Abs(float64(head_v)) > math.Abs(float64(tail_v)) {
-			out[cur] = int(math.Pow(head_v, 2))
+		head_v := nums[head]
+		tail_v := nums[tail]
+		if abs(head_v) > abs(tail_v) {
+			out[cur] = head_v * head_v
 			head++
 			continue
 		}
 
-		out[cur] = int(math.Pow(tail_v, 2))
+		out[cur] = tail_v * tail_v
 		tail--
 	}
 	return out
